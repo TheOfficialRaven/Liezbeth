@@ -171,7 +171,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(106vh - 100px);
     display: flex;
     align-items: center;
     position: relative;
