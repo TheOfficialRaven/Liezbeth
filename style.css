@@ -32,6 +32,10 @@ body {
     width: fit-content;
   }
 
+  head title {
+    color: rgb(28, 116, 50);
+  }
+
 
 
 /***************************** Header *************************/
@@ -298,6 +302,10 @@ header nav a:hover{
         display: block; 
         scroll-margin-top: 110px;
     }
+
+    .bg-service .service-two {
+        margin-top: 50px;
+    }
 }
 
 @media(max-width: 576px){
@@ -373,6 +381,10 @@ header nav a:hover{
 @media(max-width: 547px){
     .menu1 img{
         width: 90px;
+    }
+
+    .about-section .img p {
+        padding-top: 10px;
     }
     .menu1 h4{
         font-size: 20px;

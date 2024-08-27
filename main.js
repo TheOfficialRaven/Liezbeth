@@ -40,18 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 0) {
-      barsImg.style.display = "none";
-      nav.classList.add("scrolled");
-      if (isNavOpen()) {
-        closeNav();
-      }
-    } else {
-      barsImg.style.display = "block";
-      nav.classList.remove("scrolled");
-    }
-  });  
+
     
 //////////////////////////////////////////Home content from left //////////////////////////////////
     
