@@ -1,0 +1,676 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');@import url('https://fonts.cdnfonts.com/css/fenix');
+@import url(https://fonts.bunny.net/css?family=pushster:400);
+
+/*
+font-family: 'Fenix', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+:root {
+  --main-bg-color: #c7a17a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Fenix', sans-serif;
+    font-family: 'Poppins', sans-serif 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ecebe6;
+}
+
+.anchor {
+    anchor-name: --myAnchor;
+    width: fit-content;
+  }
+
+
+
+/***************************** Header *************************/
+.logo a {
+    color: rgb(28, 116, 50);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 111;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #000000;
+    margin: 0px 10px;
+    position: relative;
+}
+
+
+header nav a:hover:before{
+    transform: scale(1);
+
+}
+
+header nav a:hover{
+    color: rgb(28, 116, 50);
+    text-decoration: none;
+}
+
+.bars{
+    display: none;
+}
+
+.bars img{
+    width: 40px;
+    height: 40px;
+}
+
+/**************************** Header Mobile *************************/
+
+@media(max-width: 768px){
+    .info{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    header .navigation{
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transition: .4s ease-in-out;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ecebe6;
+    }
+    
+    header .navigation li{
+        margin: 10px 0px;
+        color: #fff;
+    }
+    
+    .home-content h1{
+        font-size: 10rem;
+        color: #fff;
+    }
+    
+    .navigation.scrolled {
+    display: none;
+  }
+
+  header nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #000000;
+    margin: 10px 10px;
+    position: relative;
+}
+    
+}
+
+@media(max-width: 576px){
+    .home-content h1{
+        font-size: 2rem;
+    }
+    .home-content p{
+        font-size: 13px;
+    }
+    .home-content br{
+        display: none;
+    }
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+@media(max-width: 350px){
+    .home-content .home-links{
+        flex-direction: column;
+        grid-row-gap: 15px;
+    }
+}
+
+
+
+
+/********************** Home Section ***********************/
+
+.home-section{
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.123) 0%) , linear-gradient(180deg, rgba(0,0,0,0) 96%, rgba(0,0,0,1) 100%) , url(nathan-dumlao-1SJRLmhnmaA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.home-content{
+    position: absolute;
+    left: -200%;
+    color: #fff;
+    transition: left .5s ease-in-out;
+}
+
+
+/************************************* Home Mobile ********************************/
+
+@media(max-width: 991px){
+    .home-section{
+        width: 100%;
+    }
+    
+    
+}
+
+@media(max-width: 576px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
+
+@media(max-width: 390px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
+
+/************************************* Section Two ********************************/
+
+.bg-service{
+    width: 98%;
+    margin: 50px auto;
+    display: flex;
+    scroll-margin-top: 110px;
+}
+
+
+.bg-service .service-one{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-service .service-two {
+    margin-left: 30px;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-service .service-two h2 {
+    font-size: 35px;
+    
+}
+
+.bg-service .service-two .text {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+   
+}
+
+.service-two .idezet {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.service-one img{
+    width: 100%;
+    transition: .1s ease-in-out;
+}
+
+
+.service-one .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**
+.service-one .over-txt p{
+    margin: 0;
+    color: #c7a17a;
+    text-transform: capitalize;
+}
+
+.service-one .over-txt h4{
+    text-transform: capitalize;
+}
+**/
+
+
+
+
+/***************************** Section Two Mobile ***********************************/
+
+@media(max-width: 991px){
+    .bg-service .service-one{
+        width: 100%;
+    }
+
+    .bg-service {
+        width: 100%; 
+        margin: 20px 0;
+        display: block; 
+        scroll-margin-top: 110px;
+    }
+}
+
+@media(max-width: 576px){
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+@media(max-width: 390px){
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+
+
+
+/****************************** Menü Section Four **********************/
+
+.about-section .img{
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.568) 0%) , linear-gradient(180deg, rgba(0,0,0,0) 96%, rgba(0,0,0,1) 100%), url(Rolunk_pic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about-section .img p {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 500px;
+    background-color: #00000085;
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: auto;
+    border: 5px solid #fff;
+}
+
+
+/********************************* Menu Mobile ************************/
+
+
+@media(max-width: 991px){
+    .menu-flex .menu1{
+        width: 100%;
+    }
+    .bg-menu{
+        width: 100%;
+    }
+
+    .about-section .img p {
+        font-size: 25px;
+        color: #fff;
+        margin-left: 0px; 
+        margin-right: 0px; 
+        height: 400px;
+        background-color: #00000085;
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: auto;
+        border: 5px solid #fff;
+    }
+}
+
+@media(max-width: 547px){
+    .menu1 img{
+        width: 90px;
+    }
+    .menu1 h4{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 390px){
+    .menu1 h4{
+        font-size: 18px;
+    }
+}
+
+
+/******************************* Galéria Section Five *******************************/
+
+
+.bg-gallery {
+    margin: 20px 0;
+    scroll-margin-top: 120px;
+}
+
+.bg-gallery .gallery-flex{
+    display: flex;
+}
+
+.gallery-flex .image-one{
+    width: 20%;
+}
+
+.gallery-flex img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.inside-gallery{
+    display: flex;
+    width: 40%;
+}
+
+.inside-gallery .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inside-gallery .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.last-image{
+    width: 40%;
+}
+
+.bg-gallery .event{
+    position: relative;
+}
+
+.bg-gallery .overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.301);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.bg-gallery .event:hover .overlay{
+    opacity: 1;
+}
+
+
+/******************* Section Five Mobile **************************/
+
+@media(max-width: 768px){
+    
+    .gallery-flex .image-one{
+        width: 50%;
+    }
+    .inside-gallery{
+        width: 50%;
+    }
+    .bg-gallery .last-image{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .gallery-flex .image-one{
+        width: 100%;
+    }
+
+    .bg-gallery .gallery-flex{
+        flex-wrap: wrap;
+     }
+    .inside-gallery{
+        width: 100%
+    }
+}
+
+
+/******************************** Rólunk Section Six **************************/
+.elerhetoseg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elerhetoseg h1 {
+    color: rgb(28, 116, 50);
+    margin-top: 50px;
+}
+
+.elerhetoseg p {
+    color: rgb(28, 116, 50);
+    justify-content: center;
+    display: flex;
+}
+
+.elerhetoseg .text {
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.footer1 {
+    margin-left: 200px;
+}
+
+.footer1 .location {
+    margin-bottom: 20px;
+}
+
+.location span {
+    margin-left: -30px;
+    display: inline-block;
+    margin-right: 13px;
+    color: rgb(28, 116, 50);
+}
+
+.location a {
+    text-decoration: none;
+    color: rgb(28, 116, 50) !important;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.location section {
+    margin-bottom: 5px;
+    color: rgb(28, 116, 50);
+}
+.location span {
+    font-size: 20px;
+}
+
+/***************************** Section Six Mobile **********************/
+
+@media(max-width: 768px){
+    .bg-about .about-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .elerhetoseg {
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .elerhetoseg .text {
+        margin-left: 0px;
+    }
+
+    .footer1 {
+        margin-left: 50px;
+    }
+     .about-flex .about1{
+        width: 97%;
+    }
+    
+    .about-flex .about1 img{
+        width:  92%;
+    }
+    
+    .bg-about .about2{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 576px){
+    .bg-about .about-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .about-flex .about1{
+        width: 95%;
+    }
+    
+    .about-flex .about1 img{
+        width:  90%;
+    }
+    
+    .bg-about .about2{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+/******************************** Footer ***********************************/
+
+.footer{
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)) , url(footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    padding: 100px 0px;
+    overflow: hidden;
+}
+
+.footer .rights{
+    text-align: center;
+}
+
+.footer .rights p{
+    color: #ffff;
+    font-size: 13px;
+    padding-top: 70px;
+}
+
+
+/**************************************** Footer Mobile ***************************/
+
+@media(max-width: 1200px){
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
+
+@media(max-width: 991px){
+    .footer-flex .footer1{
+        width: 49%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 18%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 18%;
+    }
+    
+    .footer-flex .footer2{
+        width: 100%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
+
+@media(max-width: 576px){
+    .footer-flex .footer1{
+        width: 100%;
+    }
+    
+    .footer-flex .footer2{
+        width: 100%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
