@@ -36,6 +36,10 @@ body {
     color: rgb(28, 116, 50);
   }
 
+  p {
+    margin-bottom: 0px;
+  }
+
 
 
 /***************************** Header *************************/
@@ -217,9 +221,10 @@ header nav a:hover{
 
 .bg-service{
     width: 98%;
-    margin: 50px auto;
+    margin: 150px auto;
     display: flex;
-    scroll-margin-top: 110px;
+    scroll-margin-top: 150px;
+    
 }
 
 
@@ -234,6 +239,7 @@ header nav a:hover{
     width: 70%;
     position: relative;
     overflow: hidden;
+    
 }
 
 .bg-service .service-two h2 {
@@ -403,7 +409,7 @@ header nav a:hover{
 
 .bg-gallery {
     margin: 20px 0;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 50px;
 }
 
 .bg-gallery .gallery-flex{
@@ -512,6 +518,7 @@ header nav a:hover{
     align-items: center;
     margin-top: 30px;
     margin-left: 100px;
+    margin-bottom: 20px;
 }
 
 .footer1 {
@@ -563,6 +570,11 @@ header nav a:hover{
 
     .elerhetoseg .text {
         margin-left: 0px;
+        text-align: center;
+    }
+
+    .elerhetoseg .Title {
+        text-align: center;
     }
 
     .footer1 {
@@ -612,7 +624,6 @@ header nav a:hover{
     background-size: cover;
     width: 100%;
     height: 150px;
-    padding: 100px 0px;
     overflow: hidden;
 }
 
@@ -623,7 +634,11 @@ header nav a:hover{
 .footer .rights p{
     color: #ffff;
     font-size: 13px;
-    padding-top: 70px;
+    padding-top: 80px;
+}
+
+.footer .rights .designed {
+    padding-top: 0px;
 }
 
 
